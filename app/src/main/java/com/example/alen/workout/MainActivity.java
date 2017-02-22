@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected GridView workoutGrid;
     @ViewById(resName = "barchart")
     protected BarChart mBarChart;
-    private List<Integer> workoutAmountList = Arrays.asList(0,0,0,0);
+    private List<Integer> workoutAmountList = Arrays.asList(1,1,1,1);
     private Integer[] temporaryWorkoutAmountList = {0,0,0,0};
     List<Integer> workoutImages = Arrays.asList(R.drawable.abs,R.drawable.pullup,R.drawable.pushup,R.drawable.squats);
 
