@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    card_view:cardBackgroundColor="#61e52d34"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/workout_image"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pullup"/>
+
+        <com.dualcores.swagpoints.SwagPoints
+            xmlns:swagpoints="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/seekbar_point"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            swagpoints:min="0"
+            swagpoints:max="100"
+            swagpoints:step="1"
+            swagpoints:progressColor="@color/color_progress"
+            swagpoints:progressWidth="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/workout_image"
+            swagpoints:arcColor="@color/color_arc"
+            swagpoints:arcWidth="8dp"
+            swagpoints:textSize="20sp"
+            swagpoints:textColor="#000000"
+            swagpoints:indicatorIcon="@drawable/star"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>
