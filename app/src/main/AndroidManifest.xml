@@ -7,8 +7,15 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name="com.activeandroid.app.Application">
+        <meta-data android:name="AA_DB_NAME" android:value="workoutdata.db"/>
+        <meta-data android:name="AA_DB_VERSION" android:value="1"/>
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.example.alen.workout.database.model.DailyGoalModel, com.example.alen.workout.database.model.WorkoutModel" />
         <activity android:name=".MainActivity_">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
