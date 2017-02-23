@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
         workoutGrid.setAdapter(new GridAdapter(this,workoutAmountList, workoutImages));
         workoutGrid.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
